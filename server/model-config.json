@@ -42,6 +42,12 @@
   },
   "SSFUsers": {
     "dataSource": "mongo",
-    "public": true
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
+  "Email" : {
+    "dataSource" : "emailConnector"
   }
 }
