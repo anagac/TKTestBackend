@@ -5,7 +5,8 @@
   },
   "mongo": {
     "name": "mongo",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "url": "mongodb://heroku_9h9p0kst:ja6en0hecplj0ihdo2sjnuoa2b@ds045464.mongolab.com:45464/heroku_9h9p0kst"
   },
   "emailConnector": {
     "name": "emailConnector",
