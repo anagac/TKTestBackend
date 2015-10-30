@@ -33,16 +33,13 @@ module.exports = function(SsfUsers) {
           host: 'https://tktestapp.herokuapp.com/'
         };
         user.verify(options, function(err, response) {
-            console.log(JSON.stringify(err));
-            console.log(JSON.stringify(response));
-            console.log(context.res);
             if (err) {
                 console.log(JSON.stringify(err));
                 next(err);
                 return;
             }
-          console.log('> verification email sent:', response);
-          
+           console.log('> verification email sent:', response);
+           next();
           
         });
     });
