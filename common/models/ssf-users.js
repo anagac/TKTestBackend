@@ -33,20 +33,17 @@ module.exports = function(SsfUsers) {
           host: 'https://tktestapp.herokuapp.com/'
         };
         user.verify(options, function(err, response) {
-          if (err) {
-              console.log(JSON.stringify(err));
-            next(err);
-            return;
-          }
+            console.log(JSON.stringify(err));
+            console.log(JSON.stringify(response));
+            console.log(context.res);
+            if (err) {
+                console.log(JSON.stringify(err));
+                next(err);
+                return;
+            }
           console.log('> verification email sent:', response);
-          console.log(context.res);
-          context.res.render('response', {
-            title: 'Signed up successfully',
-            content: 'Please check your email and click on the verification link '
-              + 'before logging in.',
-            redirectTo: '/',
-            redirectToLinkText: 'Log in'
-          });
+          
+          
         });
     });
 };
