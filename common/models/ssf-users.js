@@ -30,7 +30,9 @@ module.exports = function(SsfUsers) {
           template: path.resolve(__dirname, '../../server/views/verify.ejs'),
           redirect: '/',
           user: user,
-          host: 'tktestapp.herokuapp.com'
+          host: 'tktestapp.herokuapp.com',
+          protocol: "https",
+          port: 443
         };
         user.verify(options, function(err, response) {
             if (err) {
