@@ -28,11 +28,10 @@ module.exports = function(SsfUsers) {
           from: 'noreply@softstackfactory.com',
           subject: 'Thanks for registering.',
           template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-          redirect: '/',
+          redirect: '/verified',
           user: user,
           host: 'tktestapp.herokuapp.com',
-          protocol: "https",
-          port: 443
+          protocol: "https"
         };
         user.verify(options, function(err, response) {
             if (err) {
