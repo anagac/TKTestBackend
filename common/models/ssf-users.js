@@ -29,7 +29,8 @@ module.exports = function(SsfUsers) {
           subject: 'Thanks for registering.',
           template: path.resolve(__dirname, '../../server/views/verify.ejs'),
           redirect: '/verified',
-          user: user
+          user: user,
+          host: 'https://tktestapp.herokuapp.com/'
         };
         user.verify(options, function(err, response) {
           if (err) {
