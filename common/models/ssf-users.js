@@ -31,7 +31,8 @@ module.exports = function(SsfUsers) {
           redirect: '/verified',
           user: user,
           host: 'tktestapp.herokuapp.com',
-          protocol: "https"
+          protocol: "https",
+          port: 443
         };
         user.verify(options, function(err, response) {
             if (err) {
