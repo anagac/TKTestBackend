@@ -5,24 +5,10 @@
   },
   "mongo": {
     "name": "mongo",
-    "connector": "mongodb",
-    "url": "mongodb://heroku_9h9p0kst:ja6en0hecplj0ihdo2sjnuoa2b@ds045464.mongolab.com:45464/heroku_9h9p0kst"
+    "connector": "mongodb"
   },
   "emailConnector": {
     "name": "emailConnector",
-    "connector": "mail",
-    "transports": [{
-       "type": "smtp",
-       "host": "smtp.sendgrid.net",
-       "secure": false,
-       "port": 587,
-       "tls": {
-         "rejectUnauthorized": false
-       },
-       "auth": {
-         "user": "app43170068@heroku.com",
-         "pass": "69c3klmv6566"
-       }
-     }]
+    "connector": "mail"
   }
 }
