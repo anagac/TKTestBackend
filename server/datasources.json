@@ -13,15 +13,15 @@
     "connector": "mail",
     "transports": [{
        "type": "smtp",
-       "host": "mail.softstackfactory.com",
+       "host": "smtp.sendgrid.net",
        "secure": false,
        "port": 587,
        "tls": {
          "rejectUnauthorized": false
        },
        "auth": {
-         "user": "aaguilar@softstackfactory.com",
-         "pass": "$1520AAssf2015$"
+         "user": "app43170068@heroku.com",
+         "pass": "69c3klmv6566"
        }
      }]
   }
