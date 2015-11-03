@@ -7,6 +7,4 @@ module.exports = function(server) {
     res.render('verified');
   });
   server.use(router);
-  
-
 };
