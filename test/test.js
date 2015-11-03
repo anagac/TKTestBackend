@@ -23,7 +23,7 @@ describe('Authentication', function() {
     .end(function(err,res) {
       if(err) return done(err);
       
-      res.body.error.should.have.property("message").and.to.equal("Authorization Required");
+      res.body.error.should.have.property("message").and.to.equal("Authorization Requireeed");
       done();
     })
   });
