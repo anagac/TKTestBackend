@@ -1,6 +1,11 @@
+
+var loopback = require('loopback');
+var app = module.exports = loopback();
+
 var should = require('chai').should(),
     supertest = require('supertest'),
-    api = supertest('https://strongloop-backend-andy-eagle.c9.io/api/');
+    api = supertest(app.get('url'));
+console.log("URL: " + app.get('url'));
 
 describe('Authentication', function() {
 
