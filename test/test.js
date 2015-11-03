@@ -4,7 +4,7 @@ var app = module.exports = loopback();
 
 var should = require('chai').should(),
     supertest = require('supertest'),
-    api = supertest(app.get('url'));
+    api = supertest("http://0.0.0.0:3000/api/");
 console.log("URL: " + app.get('url'));
 
 describe('Authentication', function() {
